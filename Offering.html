@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Offering</title>
+	<style>
+        body{
+            background-color: black;
+        }
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 200px;
+
+		}
+		input[type=password] {
+			padding: 40px;
+			margin: 50px;
+			font-size: 16px;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+		}
+		button {
+			padding: 30px 40px;
+			font-size: 16px;
+			background-color: #4CAF50;
+			color: white;
+			border-radius: 5px;
+			border: none;
+			cursor: pointer;
+			box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+		}
+		button:hover {
+			background-color: #3e8e41;
+		}
+
+        h1{
+            color: white;
+            font-size: 50px;
+            text-align: center;
+            margin: 0;
+            padding: 0;}
+	</style>
+</head>
+<body>
+
+
+	<form>
+		<label for="password">> <br> <h1>hint : my discord username</h1></label>
+		<input type="password" id="password" name="password" required>
+		<button type="submit">Submit</button>
+	</form>
+
+
+
+
+	<script>
+        const form = document.querySelector('form');
+form.addEventListener('submit', function(event) {
+	event.preventDefault();
+	const password = document.getElementById('password').value;
+	if (password === 'hariochappal') {
+		window.location.href = 'https://simangka.me/hariochappal/';
+	} else {
+		alert('Incorrect password!');
+	}
+});
+
+    </script>
+</body>
+</html>
